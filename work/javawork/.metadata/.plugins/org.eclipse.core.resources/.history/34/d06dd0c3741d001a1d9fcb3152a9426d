@@ -1,0 +1,12 @@
+package coffee;
+
+public class Coffee extends Beverage {
+	
+	public Coffee {
+		
+	}
+	
+	public void calcPrice() {
+		
+	}
+}

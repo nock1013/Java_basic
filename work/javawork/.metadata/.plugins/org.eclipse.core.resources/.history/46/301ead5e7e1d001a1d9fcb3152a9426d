@@ -1,0 +1,28 @@
+package workbook;
+
+public class CalcTest {
+
+	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+		
+		switch (args[1]) {
+		case "+":
+			calculator.plus(Integer.parseInt(args[0]), Integer.parseInt(args[2]));
+			break;
+		case "-":
+			calculator.minus(Integer.parseInt(args[0]), Integer.parseInt(args[2]));
+			break;
+		case "x":
+			calculator.multiplication(Integer.parseInt(args[0]), Integer.parseInt(args[2]));
+			break;
+		case "/":
+			calculator.divide(Integer.parseInt(args[0]), Integer.parseInt(args[2]));
+			break;
+
+		default:
+			break;
+		}
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package oop.chap07.poly;
+public class SenderLogic {
+	public void run(Sender sender) {
+		
+	}
+}

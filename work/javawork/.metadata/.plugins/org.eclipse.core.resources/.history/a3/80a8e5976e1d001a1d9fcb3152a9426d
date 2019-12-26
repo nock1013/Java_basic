@@ -1,0 +1,12 @@
+package oop.chap07.poly;
+
+public class Content {
+	private Stirng title;
+	private int price;
+	
+	public Content() {
+		
+	}
+	
+
+}

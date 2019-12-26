@@ -1,0 +1,18 @@
+package oop.chap07;
+
+class FinalSuper {
+	
+}
+class FinalSub extends FinalSuper {
+	int num = 100;
+}
+
+public class FinalTest {
+
+	public static void main(String[] args) {
+		FinalSub obj = new FinalSub();
+		obj.num = 1000;
+
+	}
+
+}

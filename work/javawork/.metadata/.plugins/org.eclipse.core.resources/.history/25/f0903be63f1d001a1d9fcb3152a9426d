@@ -1,0 +1,26 @@
+package oop.chap07;
+
+public class Dessert {
+	private String productName;
+	private int price;
+	private int count;
+	
+	public Dessert() {
+		
+	}
+	public Dessert(String productName, int price, int count) {
+		super();
+		this.productName = productName;
+		this.price = price;
+		this.count = count;
+	}
+	
+	public int getTotalPrice() {
+		
+	}
+	public void print() {
+	}
+	public void printProductInfo() {
+		
+	}
+}

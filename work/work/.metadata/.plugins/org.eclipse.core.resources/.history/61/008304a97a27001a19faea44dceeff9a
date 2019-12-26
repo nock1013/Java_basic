@@ -1,0 +1,25 @@
+JDBC
+=> java로 DBMS연동하는 기술(SQL문을 자바로 만든 시스템을 통해 실행할 수 있도록 만들어진 자바의 기술)
+
+[[JDBC api 사용전 처리 순서]]
+ 1. jdbc드라이버를 제조사홈페이지에서 다운로드 받는다.
+  => C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib 폴더에 있는 ojdbc6.jar파일 
+ 
+ 2. JVM이 인식할 수 있는 위치에 연결
+    1) 이클립스를 사용하는 경우(Application)
+       ① 작업 중인 프로젝트 선택
+       ② 프로젝트에서 단축메뉴 선택 -> [Build path]-[Configure Build path]
+       ③ 대화상자에서 세 번째 탭인 [Libraries]탭 선택
+       ④ [Add External jar....]선택하고 1번 위치에 있는 ojdbc6.jar파일을 등록
+  
+[[JDBC API사용하기]]    
+ 1. 오라클 드라이버 로딩
+   =>  JVM에서 드라이버내의 api를 접근해서 사용할 수 있도록 Class클래스의 forName메소드를 이용해서 핵심클래스를 로딩하는 작업
+   
+   [문법]
+   Class.forName("DBMS드라이버의 핵심클래스명")
+   				-------------------------
+   				   |_ 패키지명까지 명시
+   				   
+   - 오라클 : oracle.jdbc.driver.OracleDriver
+   - MySQL : com.mysql.jdbc.Driver

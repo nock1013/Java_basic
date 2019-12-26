@@ -1,0 +1,28 @@
+package workbook;
+
+public class CalcTest {
+
+	public static void main(String[] args) {
+		Calculator calculator = new Calculator();
+		
+		switch (args[1]) {
+		case "+":
+			calculator.plus(args[0], args[2]);
+			break;
+		case "-":
+			
+			break;
+		case "x":
+	
+			break;
+		case "/":
+	
+			break;
+
+		default:
+			break;
+		}
+
+	}
+
+}

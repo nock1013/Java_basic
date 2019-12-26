@@ -1,0 +1,14 @@
+package oop.chap07.poly;
+
+public class Video {
+	private String genre;
+	
+	public Video() {
+		
+	}
+	public Video(String genre) {
+		super();
+		this.genre = genre;
+	}
+	
+}

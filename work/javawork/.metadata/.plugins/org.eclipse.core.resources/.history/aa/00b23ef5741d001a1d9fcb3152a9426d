@@ -1,0 +1,21 @@
+package coffee;
+
+public class Coffee extends Beverage {
+	private int amount;
+	
+	public Coffee() {
+		
+	}
+	
+	public int getAmount() {
+		return amount;
+	}
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+
+	public void calcPrice() {
+		
+	}
+}

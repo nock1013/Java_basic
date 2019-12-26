@@ -1,0 +1,27 @@
+package oop.chap07;
+
+class FinalSuper {
+	public void display() {
+		System.out.println("super display");
+	}
+}
+class FinalSub extends FinalSuper {
+	static final int NUM = 100;	// 상수로 선언했으므로 값을 수정할 수 없다.
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		super.display();
+	}
+}
+
+public class FinalTest {
+
+	public static void main(String[] args) {
+		FinalSub obj = new FinalSub();
+		FinalSub.NUM = 1000;
+		System.out.println(FinalSub.NUM);
+
+	}
+
+}

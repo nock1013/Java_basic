@@ -1,0 +1,17 @@
+package oop.chap07;
+
+public class FinalSuper {
+	
+}
+public class FinalSub extends FinalSuper {
+	
+}
+
+public class FinalTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

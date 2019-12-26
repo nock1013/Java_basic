@@ -1,0 +1,25 @@
+package oop.chap07.poly;
+// 객체의 형변환 - 상속관계에 있는 경우에만 가능하다.
+class Parent {
+	String name = "장동건";
+	public void display() {
+		System.out.println("부모의 display");
+	}
+}
+class Child extends Parent {
+	String name = "이민호";
+	public void display() {
+		System.out.println("자식의 display");
+	}
+	public void test() {
+		System.out.println("하위클래스에만 정의된 메서드");
+	}
+ }
+public class RefCastingTest {
+	public static void main(String[] args) {
+		System.out.println("1. super타입의 참조변수로 super객체를 참조");
+		Parent obj1 = new Child();
+		obj1.display();
+		System.out.println(obj1.name);
+	}
+}

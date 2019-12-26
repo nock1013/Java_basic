@@ -1,0 +1,13 @@
+package oop.chap07;
+
+public class IceCream extends Dessert {
+	private int calorie;
+	
+	public IceCream() {
+		
+	}
+	public IceCream(String productName, int price, int count, int calorie) {
+		super(productName, price, count);
+		this.calorie = calorie;
+	}
+}

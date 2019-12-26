@@ -1,0 +1,31 @@
+package coffee;
+
+public class Tea extends Beverage{
+	private static int amount;
+	
+	public Tea() {
+		
+	}
+	
+	public int getAmount() {
+		return amount;
+	}
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	
+	public void calcPrice() {
+		if(getName().equals("lemonTea"))
+		{
+			setPrice(1500);
+		}
+		else if(getName().equals("ginsengTea"))
+		{
+			setPrice(2000);
+		}
+		else if(getName().equals("redginsengTea"))
+		{
+			setPrice(2500);
+		}
+	}
+}

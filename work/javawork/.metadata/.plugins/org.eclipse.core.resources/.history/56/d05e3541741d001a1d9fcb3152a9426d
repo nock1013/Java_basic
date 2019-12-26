@@ -1,0 +1,28 @@
+package coffee;
+
+public class Beverage {
+	private stiring name;
+	protected int price;
+	
+	public Beberage() {
+		
+	}
+	public Beverage(stiring name) {
+		super();
+		this.name = name;
+	}
+	public stiring getName() {
+		return name;
+	}
+	public void setName(stiring name) {
+		this.name = name;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	
+}

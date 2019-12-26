@@ -1,0 +1,12 @@
+package oop.chap07;
+
+public class Dessert {
+	private String productName;
+	private int price;
+	private int count;
+	
+	public Dessert() {
+		
+	}
+	
+}

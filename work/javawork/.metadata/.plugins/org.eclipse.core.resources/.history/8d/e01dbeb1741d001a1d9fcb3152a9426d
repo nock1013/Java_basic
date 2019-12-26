@@ -1,0 +1,12 @@
+package oop.chap07.poly;
+
+public class Coffee extends Beverage {
+	
+	public Coffee {
+		
+	}
+	
+	public void calcPrice() {
+		
+	}
+}
