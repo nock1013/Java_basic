@@ -1,0 +1,9 @@
+package jdbc.board.exam;
+
+public interface BoardDAO {
+	void insert(String id, String title, String content);
+	void Update(int boardnum, String id);
+	void delete(int boardnum);
+	void Select();
+
+}

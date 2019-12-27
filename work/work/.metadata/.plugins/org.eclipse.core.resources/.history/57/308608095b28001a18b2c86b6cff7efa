@@ -1,0 +1,14 @@
+package jdbc.member.exam;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class MemberDAOImpl implements MemberDAO{
+	public int insert(MemberDAO board) {
+		Connection con = null;
+		PreparedStatement stmt = null;
+		String sql = "insert into member values(?,?,?,?,?,sysdate,1000)";
+	}
+	
+
+}

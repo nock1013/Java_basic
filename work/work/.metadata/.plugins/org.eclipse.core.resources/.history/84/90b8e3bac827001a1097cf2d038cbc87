@@ -1,0 +1,6 @@
+package workbook;
+
+public class Rectangle extends Shape implements Movalble {
+	private int width;
+
+}

@@ -1,0 +1,16 @@
+package workbook;
+
+public class Shape {
+	protected Point point;
+	
+	public Shape() {
+		
+	}
+	public Shape(Point point) {
+		super();
+		this.point = point;
+	}
+	public abstract double getArea();
+		
+	}
+

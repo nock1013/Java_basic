@@ -1,0 +1,12 @@
+package jdbc.board.exam;
+
+public class BoardDTO {
+	private int boardNum;
+	private String id;
+	private String title;
+	private String content;
+	private Date writeDate;
+	private int hit;
+	
+
+}

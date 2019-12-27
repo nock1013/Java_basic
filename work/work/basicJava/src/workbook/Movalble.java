@@ -1,5 +1,6 @@
 package workbook;
 
-public class Movalble {
-
+interface Movalble {
+	public void move(int x, int y);
+	
 }

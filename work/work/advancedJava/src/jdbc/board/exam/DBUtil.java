@@ -2,7 +2,9 @@ package jdbc.board.exam;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 //DBMS에 접근하는 중복된 작업을 정의할 클래스
 public class DBUtil {
@@ -29,5 +31,18 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 		return con;
+	}
+	//3. 자원 반납 - ResuletSet, Statement, Connection객체 사용을 해제
+	// 		   => 각각의 객체를 해제할 수 있도록 메소드를 정의해도 좋다.
+	public static void close(ResultSet rs, Statement stmt, Connection con) {
+		try {
+			if(rs!=null)rs.close();
+			if(stmt!=null)stmt.close();
+			if(con!=null)con.close();	
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
 	}
 }

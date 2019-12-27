@@ -1,0 +1,8 @@
+package jdbc.customer;
+
+public class Snippet {
+	public static void main(String[] args) {
+		CustomerDAO
+	}
+}
+
