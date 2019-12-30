@@ -1,7 +1,0 @@
-package jdbc.member.exam;
-
-public class MemberDAOImpl implements MemberDAO{
-	public 
-	
-
-}

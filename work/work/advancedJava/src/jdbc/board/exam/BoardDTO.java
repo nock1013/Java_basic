@@ -29,6 +29,7 @@ public class BoardDTO {
 		this.writeDate = writeDate;
 		this.hit = hit;
 	}
+	
 	@Override
 	public String toString() {
 		return "BoardDTO [boardNum=" + boardNum + ", id=" + id + ", title=" + title + ", content=" + content
@@ -70,6 +71,7 @@ public class BoardDTO {
 	public void setHit(int hit) {
 		this.hit = hit;
 	}
+	
 	
 	
 
