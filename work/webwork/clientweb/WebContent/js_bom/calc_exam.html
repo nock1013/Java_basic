@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title> New Document </title>
-<script type="text/javascript">
-</script>
+	<meta charset="EUC-KR">
+	<title> New Document </title>
+	<script type="text/javascript">
+		function button_click(val) {
+			//alert(val);
+			myform.mytext.value = myform.mytext.value + val;
+		}
+		function compute(){
+			myform.mytext.value = eval(myform.mytext.value);//텍스트상자에 입력된 값을 연산하기 & 
+															//연산된 결과를 다시 텍스트상자에 set(을 합침)
+		}
+		function clear_del(){
+			myform.mytext.value="";
+		}
+	
+	
+	</script>
 </HEAD>
 <BODY>
 <br>
 <br>
 <br>
-<center>
 <h1>계산기 활용 예</h1>
 <form name="myform">
 <table border="1">
@@ -47,6 +59,5 @@
 	</tr>
 </table>
 </form>
-</center>
 </BODY>
 </HTML>

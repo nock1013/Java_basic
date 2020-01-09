@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	function printText(){
+	  key = bom.id.value;
+      rekey = "4글자 이상의 글자를 입력하세요";
+      nokey = "이미 사용중인 아이디 입니다."; 
+		   if(key =="java"){
+			   document.getElementById("result").innerHTML = nokey;
+		   }else{
+      	   if(key.length<4 & key.length>0){
+				document.getElementById("result").innerHTML = rekey; 
+     	   }else{
+	       document.getElementById("result").innerHTML = "";
+	   	   }
+		}
+	}
+	</script>
+</head>
+<body>
+	<h1>티몬 회원가입</h1>
+	<h2>필수항목</h2>
+	<form name = "bom">
+	아이디:<input type="text" name="id" onkeyup="printText()"  >
+	
+	</form>
+  <div id="result" style="color:red;"></div>
+</body>
+</html>
