@@ -1,8 +1,0 @@
-package jdbc.customer;
-
-public interface CustomerDAO {
-	public int insert(CustomerDTO customer);
-	public int update(String id, String addr);
-	public int delete(String id);
-
-}

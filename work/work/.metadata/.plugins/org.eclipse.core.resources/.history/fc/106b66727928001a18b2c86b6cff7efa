@@ -1,5 +1,0 @@
-package jdbc.customer;
-
-public class CustomerDTO {
-
-}

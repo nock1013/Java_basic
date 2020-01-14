@@ -1,0 +1,147 @@
+<<¼­ºí¸´>>
+¼­ºí¸´Àº Å¬¶óÀÌ¾ðÆ® ÆäÀÌÁö¿¡¼­ ¹ß»ýÇÏ´Â Å¬¶óÀÌ¾ðÆ®¿¡ ¿äÃ»À» Ã³¸®ÇÏ±â À§ÇÑ ±â¼ú
+Å¬¶óÀÌ¾ðÆ®·ÎºÎÅÍ ¿äÃ»ÀÌ Àü´ÞµÇ¸é ¼­¹ö¿¡¼­ ½ÇÇàµÇ¸ç DB¿¬µ¿ÀÌ³ª ¼­¹öÀÇ ÀÚ¿øÀ» ¾×¼¼½ºÇÏ¿©
+¸¸µé¾îÁø °á°ú¸¦ Å¬¶óÀÌ¾ðÆ®·Î ÀÀ´äÇÑ´Ù.
+Å¬¶óÀÌ¾ðÆ®ÀÇ ¿äÃ»À» ÀÎ½ÄÇÏ°í ½ÇÇàµÇµµ·Ï ÇÏ±â À§ÇØ¼­´Â ¼­ºí¸´Àº Á¤ÇØÁø ±ÔÄ£´ë·Î ÀÛ¼ºÀÌ
+µÇ¾î¾ß ÇÏ°í ¼­¹ö°¡ ¼­ºí¸´À» Ã£¾Æ¼­ ½ÇÇàÇÒ ¼ö ÀÖµµ·Ï Á¤ÇØÁø À§Ä¡¿¡ ÀÛ¼ºµÇ¾î¾ß ÇÑ´Ù.
+								-----------
+					Ç¥ÁØÈ­µÈ Æú´õ ±¸Á¶¾È¿¡ ÀÖ´Â classesÆú´õ(¼­ºí¸´µð·ºÅä¸®)
+					
+					
+1. ¼­ºí¸´ÀÛ¼º ±ÔÄ¢
+	1) Ç¥ÁØÈ­µÈ Æú´õ ±¸Á¶ ¾È¿¡¼­ ¼­ºí¸´ µð·ºÅä¸®¿¡ ÀúÀåµÇ¾î¾ß ÇÑ´Ù.
+		- classesÆú´õ
+	    C:\iot\work\webwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps
+		\serverweb\WEB-INF\classes\¿¡ ÀÛ¼ºµÇ¾î¾ß ÇÑ´Ù.
+		=> ÀÌ À§Ä¡¿¡ ¼­ºí¸´ Å¬·¡½º°¡ ¾øÀ¸¸é ¸ø Ã£´Â´Ù.
+		
+	2) publicÅ¬·¡½º·Î ÀÛ¼ºÇØ¾ß ÇÑ´Ù.
+	   => ¼­¹ö°¡ Ã£¾Æ¼­ ½ÇÇàÇØ¾ß ÇÏ¹Ç·Î
+	 
+	3) ¼­ºí¸´Å¬·¡½º¸¦ »ó¼ÓÇØ¾ß ÇÑ´Ù.
+	   => ¼­¹ö°¡ ¿ì¸®°¡ ÀÛ¼ºÇÑ ¼­ºí¸´ Å¬·¡½º¸¦ Ã£¾Æ¼­ »ý¼ºÇÏ°í È£­„±â ÀÌÇØ¼­´Â
+	              ¼­¹ö°¡ ÀÎ½ÃÇÒ ¼ö ÀÖ´Â (¼­¹ö°¡ »ç¿ëÇÒ ¼ö ÀÖ´Â) Å¸ÀÔÀÌ¾î¾ß ÇÏ¹Ç·Î ¼­¹ö¿¡ µî·ÏµÈ
+	             Å¸ÀÔÀ¸·Î ¼­ºí¸´ Å¬·¡½º¸¦ ÀÛ¼ºÇÑ´Ù.
+	   Servlet(ÀÎÅÍÆäÀÌ½º)
+	        ^
+	        |
+	   GenericServlet		--------- 	ÀÏ¹ÝÀûÀÎ ³»¿ëÀ» ´ã°í ÀÖ´Â ¼­ºí¸´
+	        ^
+	        |
+	   HttpServlet	    	---------	httpÇÁ·ÎÅäÄÝ¿¡ Æ¯È­µÈ ³»¿ëÀ» ´ã°í ÀÖ´Â ¼­ºí¸´
+	        ^
+	        |
+	    MyServlet			---------	³»°¡ ÇÏ°í ½ÍÀº ÀÏÀ» ´ã°í ÀÖ´Â ¼­ºí¸´
+										(°³¹ßÀÚ°¡ ¸¸µå´Â ¼­ºí¸´)
+										
+4) ¼­¹ö°¡ È£ÃâÇÏ´Â ¸Þ¼Òµå¸¦ ¿À¹ö¶óÀÌµù ÇØ¾ß ÇÑ´Ù.
+ 	=> ¼­ºí¸´ Å¬·¡½º´Â ÀÏ¹Ý Å¬·¡½º¸¦ »ç¿ëÇÏ´Â ¹æ¹ý Ã³·³ °´Ã¼»ý¼ºÇØ¼­ »ç¿ëÇÏ´Â Å¬·¡½º°¡ ¾Æ´Ï´Ù.								
+ 		¼­ºí¸´ÀÌ È£ÃâµÇ¸é ¼­¹ö°¡ ¼­ºí¸´ °´Ã¼¸¦ »ý¼ºÇÏ°í ÀûÀýÇÑ ½ÃÁ¡¿¡ µû¶ó Á¤ÇØÁø ¸Þ¼Òµå¸¦ ÀÚµ¿À¸·Î È£ÃâÇÑ´Ù.
+ 		Áï, ¼­ºí¸´ÀÇ LifecycleÀ» ¼­¹ö°¡ °ü¸®ÇÑ´Ù.
+ 				------------
+ 				¦Ã¼¸¦ »ý¼ºÇÏ°í ¼Ò¸êÇÏ´Â °Í
+ 				
+ 		¼­¹ö°¡ ÀûÀûÇÑ ½ÃÁ¡¿¡ µû¶ó ÀÚµ¿À¸·Î ¸Þ¼Òµå¸¦ È£ÃâÇÒ¶§ ¿øÇÏ´Â ÀÛ¾÷À» Ã³¸®ÇÏ±â À§ÇØ¼­´Â
+ 		¼­¹ö°¡ È£ÃâÇÏ´Â ¸Þ¼Òµå¸¦ ¿À¹ö¶óÀÌµùÇì¼­ ³»°¡ ¿øÇÏ´Â ³»¿ëÀ» ±â¼úÇØ¾ß ÇÑ´Ù.
+										
+		[¿À¹ö¶óÀÌµùÇÒ ¸Þ¼Òµå]
+		init : ¼­ºí¸´ÀÌ ÃÊ±âÈ­ µÉ¶§ È£Ãâ
+		service : Å¬¶óÀÌ¾ðÆ®°¡ ¿äÃ»À» ÇÏ¸é È£ÃâµÇ´Â ¸Þ¼Òµå
+				  => Å¬¶óÀÌ¾ðÆ®ÀÇ ¿äÃ»À» Ã³¸®ÇÒ ¼ö ÀÖ´Â ³»¿ëÀ» ±â¼ú
+				  ex) ·Î±×ÀÎ, °Ô½ÃÆÇ¸ñ·Ïº¸±â, È¸¿ø°¡ÀÔ......
+				  => ¿äÃ»¹æ½ÄÀÇ ±¸ºÐ¾øÀÌ ¸ðµÎ È£Ãâ
+		doGet : service¿Í µ¿ÀÏÇÏ°Ô µ¿ÀÛÇÏ¸ç Å¬¶óÀÌ¾ðÆ®°¡ get¹æ½ÄÀ¸·Î ¿äÃ»ÇÏ´Â °æ¿ì¿¡¸¸ È£Ãâ
+		doPost : service¿Í µ¿ÀÏÇÏ°Ô µ¿ÀÛÇÏ¸ç Å¬¶óÀÌ¾ðÆ®°¡ post¹æ½ÄÀ¸·Î ¿äÃ»ÇÏ´Â °æ¿ì¿¡¸¸ È£Ãâ
+		destroy : ¼­ºí¸´ °´Ã¼°¡ ¼Ò¸êµÉ ¶§ (¸Þ¸ð¸®¿¡¼­ ÇØÁ¦µÉ¶§) È£Ãâ
+						
+5) ¼­ºí¸´À» µî·Ï
+   => ¼­¹ö°¡ ¼­ºí¸´À» Ã£¾Æ¼­ ½ÇÇàÇÒ ¼ö ÀÖµµ·Ï ¼­ºí¸´À» µî·Ï web.xml¿¡ µî·Ï
+   										-------
+   										¼­ºí¸´¿¡ ´ëÇÑ ³»¿ëÀ» µî·ÏÇÏ´Â ¼³Á¤ÆÄÀÏ
+	 ¨ç ¼­ºí¸´ µî·Ï
+	   => »ç¿ëÇÒ ¼­ºí¸´ÀÌ ¾î¶² Å¬·¡½ºÀÎÁö Á¤ÀÇ
+	  <servlet>
+  	   	 	<servlet-name>¼­ºí¸´ÀÇ ÀÌ¸§(alias)</servlet-name>
+  	  	 	<servlet-class>½ÇÁ¦»ç¿ëÇÒ ¼­ºí¸´Å¬·¡½º(ÆÐÅ°ÁöÆ÷ÇÔ)</servlet-class>
+  	  </servlet>											
+		 
+	 ex) basicÆÐÅ°Áö¿¡ ÀÛ¼ºÇÑ FristServletÀ» first¶ó´Â ÀÌ¸§À¸·Î µî·Ï						
+		 
+	  <servlet>
+  	   	 	<servlet-name>first(alias)</servlet-name>
+  	  	 	<servlet-class>basic.FirstServlet</servlet-class>
+  	  </servlet>	
+			
+	  ¨è	¼­ºí¸´¸ÅÇÎ
+	    => ¼­ºí¸´À» ¾î¶² url·Î ¿äÃ»ÇÒÁö µî·Ï
+	    <servlet-mapping>
+	    	<servlet-name>¹Ì¸®µî·ÏÇÑ ¼­ºí¸´ÀÇ ÀÌ¸§</servlet-name>
+	    	<url-pattern>¿äÃ»url(¹Ýµå½Ã /³ª ,À¸·Î½ÃÀÛ </servlet-class>
+	    </servlet-mapping>
+					
+		ex) À§¿¡¼­ µî·ÏÇÑ first¼­ºí¸´À» / first.multi·Î ¿äÃ»
+			<servlet-mapping>
+		    	<servlet-name>first</servlet-name>
+		    	<url-pattern>/first.multi(¹Ýµå½Ã /³ª ,À¸·Î½ÃÀÛ </servlet-class>
+		    </servlet-mapping>		
+					
+								
+2. ¼­ºí¸´ ¿äÃ» ¹æ¹ý	
+	1)get¹æ½ÄÀ¸·Î ¿äÃ»
+	  ¨ç ÁÖ¼ÒÇ¥½ÃÁÙ¿¡ ÀÔ·ÂÇÏ°í ¿äÃ»
+	  	=> Å×½ºÆ®¿ëÀ¸·Î »ç¿ë
+	  	http://70.12.115.58:8088/serverweb/first.multi
+	  						-----------  ----------	
+	  						server.xml		web.xml¿¡ µî·ÏÇÑ		
+	  						¿¡ µî·ÏÇÑ path		¿äÃ»path
+	  						º¸ÅëÀº   context¸í	 <url-pattern>¿¡ µî·Ï
+		  	ex) GuGuServletÀÛ¼ºÇÏ±â
+		  	=> ÄÜ¼Ö¿¡ 7´ÜÃâ·ÂÇÏ±â
+		  	¼­ºí¸´¸í : gugu
+		  	¿äÃ» url : /gugu.html
+		  	FirstServlet°ú µ¿ÀÏÇÑ ¹æ¹ýÀ¸·Î ¿äÃ»ÇÏ°í .java¿Í ½ÇÇàÈ­¸éÄ¸ÃÄ Á¦Ãâ
+	  	
+	  ¨è ÇÏÀÌÆÛ¸µÅ©¸¦ Å¬¸¯
+	  	<a href ="http//¼­¹öip:port/contextpath/¼­ºí¸´¿äÃ»url">ÇÏÀÌÆÛ¸µÅ©</a>
+	  	<a href =/contextpath/¼­ºí¸´¿äÃ»url">ÇÏÀÌÆÛ¸µÅ©</a>
+	  	
+	  	
+	  ¨é	<form>ÅÂ±×¿¡¼­ method¼Ó¼ºÀ» "get"À¸·Î ¼³Á¤ÇÏ°í submit¹öÆ° ¼±ÅÃ
+	  	=> action¼Ó¼º¿¡ ¼³Á¤ÇÑ´Ù.
+	  	=> formÅÂ±×¸¦ Á¤ÀÇÇÏ¸é¼­ method¼Ó¼ºÀ» »ý·«ÇÏ¸é get¹æ½ÄÀ¸·Î ¿äÃ»
+	  	=> submit¹öÆ°À» ´­·¯¼­ ¿äÃ»ÇÏ¸é <form>ÅÂ±×ÀÇ action¼Ó¼º¿¡ Á¤ÀÇÇÑ ¼­ºí¸´ÀÌ
+	  		¿äÃ»(¼­ºí¸´ÀÌ È£ÃâµÇ¾î ½ÇÇàµÇµµ·Ï ÇÑ´Ù.)µÇ¸ç <form></form>³»ºÎ¿¡ Á¤ÀÇÇÑ ¸ðµç ¾ç½ÄÅÂ±×µéÀÇ name°ú value°¡ ¼­ºí¸´À¸·Î Àü´ÞµÈ´Ù.
+	  	<form method="get" action="/contextpath/¼­ºí¸´¿äÃ»url">
+	  		<intput type="submit" value="Àü¼Û"/>
+	  	</form>
+	  
+	2) post¹æ½ÄÀ¸·Î ¿äÃ»
+	
+	   ¨ç<form>ÅÂ±×¿¡¼­ method¼Ó¼ºÀ» "post"À¸·Î ¼³Á¤ÇÏ°í submit¹öÆ° ¼±ÅÃ
+	  	=> action¼Ó¼º¿¡ ¼³Á¤ÇÑ´Ù.
+	  	=> submit¹öÆ°À» ´­·¯¼­ ¿äÃ»ÇÏ¸é <form>ÅÂ±×ÀÇ action¼Ó¼º¿¡ Á¤ÀÇÇÑ ¼­ºí¸´ÀÌ
+	  		¿äÃ»(¼­ºí¸´ÀÌ È£ÃâµÇ¾î ½ÇÇàµÇµµ·Ï ÇÑ´Ù.)µÇ¸ç 
+	  		<form></form>³»ºÎ¿¡ Á¤ÀÇÇÑ ¸ðµç ¾ç½ÄÅÂ±×µéÀÇ name°ú value°¡ ¼­ºí¸´À¸·Î Àü´ÞµÈ´Ù.
+	  	<form method="get" action="/contextpath/¼­ºí¸´¿äÃ»url">
+	  		<intput type="submit" value="Àü¼Û"/>
+	  	</form>
+		
+	3) ¿äÃ»¹æ½Ä
+	   - get : ¿äÃ»ÇÒ¶§ ÀÔ·ÂÇÏ´Â ³»¿ëÀÌ urlµÚ¿¡ Ãß°¡µÇ¾î Àü¼ÛµÇ´Â ¹æ½Ä
+	   		       Å¬¶óÀÌ¾ðÆ®°¡ ÀÔ·ÂÇÏ´Â ³»¿ëÀÌ ±×´ë·Î ³ëÃâµÈ´Ù.
+	   		       Àü¼ÛÇÒ ¼ö ÀÖ´Â µ¥ÀÌÅÍÀÇ Å©±â¿¡ Á¦ÇÑÀÌ ÀÖ´Ù.
+	   		       ¼­¹öÀÇ µ¥ÀÌÅÍ¸¦ °¡Á®¿À±â
+	   		   ex) °Ô½ÃÆÇ ¸ñ·Ï È®ÀÎÇÏ±â, »óÇ°Á¤º¸ °¡Á®¿À±â, °Ë»öÇÏ±â.....
+	   		   
+	   - post : ¿äÃ»¸Þ½ÃÁö body¿¡ Ãß°¡µÇ¾î Àü¼ÛµÇ¹Ç·Î Å¬¶óÀÌ¾ðÆ®¿¡ ³ëÃâµÇÁö ¾ÊÁö¸¸
+	   		 	µÑÀ» ÀÌ¿ëÇÏ¸é È®ÀÎÇÒ ¼ö ÀÖÀ¸¹Ç·Î ¾ÏÈ£È­ÇØ¼­ Àü¼ÛÇØ¾ß ÇÑ´Ù.
+	   		 	º¸³¾ ¼ö ÀÖ´Â µ¥ÀÌÅÍ Å©±â¿¡ Á¦ÇÑÀÌ ¾ø´Ù.
+	   		 	¼­¹ö¿¡ Å¬¶óÀÌ¾ðÆ®°¡ ¿øÇÏ´Â °ªÀ¸·Î update(º¯°æ)ÇÏ´Â °æ¿ì
+	   		 	ex) È¸¿øµî·Ï(insert¹®½ÇÇà), È¸¿øÁ¤º¸ ¼öÁ¤ÇÏ±â(update¹®½ÇÇà)
+	   		 		, ÆÄÀÏ¾÷·Îµå, ¸ÞÀÏ¾²±â 
+	  	
+	  	
+
+						
+3. Å¬¶óÀÌ¾ðÆ®°¡ Àü´ÞÇÏ´Â ¿äÃ» ¸Þ½ÃÁö¿¡¼­ Å¬¶óÀÌ¾ðÆ®ÀÇ ÀÔ·Â Á¤º¸¸¦ ÃßÃâÇÏ±â
+4. DB¿¬µ¿

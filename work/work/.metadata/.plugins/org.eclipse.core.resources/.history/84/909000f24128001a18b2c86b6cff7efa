@@ -1,6 +1,0 @@
-package jdbc.board.exam;
-
-public interface BoardDAO {
-	void insert(String id, String title, String content);
-
-}

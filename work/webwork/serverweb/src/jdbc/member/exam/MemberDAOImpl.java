@@ -6,9 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import jdbc.board.exam.BoardDTO;
-import jdbc.board.exam.DBUtil;
-
 public class MemberDAOImpl implements MemberDAO{
 	public int insert(MemberDTO user) {
 		Connection con = null;

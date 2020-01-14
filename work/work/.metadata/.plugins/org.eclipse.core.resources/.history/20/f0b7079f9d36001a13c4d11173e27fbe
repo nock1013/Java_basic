@@ -1,0 +1,10 @@
+package api.util;
+
+import java.util.HashSet;
+
+//집합, 중복을 허용하지 않는다.
+public class HashSetTest {
+	public static void main(String[] args) {
+		HashSet<String> set = new HashSet<String>(); 
+	}
+}
