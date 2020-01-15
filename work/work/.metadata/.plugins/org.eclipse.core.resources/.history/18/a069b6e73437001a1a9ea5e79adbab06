@@ -1,0 +1,8 @@
+package api.io;
+
+public class FileTest01 {
+	public static void main(String[] args) {
+		//액세스하고 싶은 파일이나 폴더의 위치를 File객체 만들때 매개변수에 정의
+		
+	}
+}

@@ -1,0 +1,36 @@
+package api.io;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+// 
+public class BufferedReaderTest {
+	public static void main(String[] args) {
+		FileReader fr = null;
+		BufferedReader br = null;
+		try {
+			
+			fr = new FileReader("src/data/test.txt");
+			
+			while(true) {
+				int data = fr.read();
+				if(data==-1) {
+					break;
+				}
+				System.out.print((char)data);
+			}
+		}catch(FileNotFoundException e) {
+				e.printStackTrace();
+		}catch (IOException e) {
+				e.printStackTrace();
+		}finally {
+				
+			try {
+				if(fr!=null)fr.close();
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

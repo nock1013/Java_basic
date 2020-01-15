@@ -1,0 +1,8 @@
+package api.io;
+//advancedJava프로젝트폴더 아래 저장된 test.txt
+public class FileInputStreamTest {
+	public static void main(String[] args) {
+
+	}
+
+}
