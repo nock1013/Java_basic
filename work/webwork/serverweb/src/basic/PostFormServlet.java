@@ -20,7 +20,6 @@ public class PostFormServlet extends HttpServlet{
 		String[] fa = req.getParameterValues("item");
 		
 		
-		
 		System.out.println("아이디:"+id);
 		System.out.println("유저이름:"+name);
 		System.out.println("패스워드:"+pass);
