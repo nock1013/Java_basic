@@ -16,9 +16,10 @@ public class ListServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("서블릿 전체목록 연결??");
-		request.setCharacterEncoding("euc-kr");
+		request.setCharacterEncoding("euc-kr");//POST방식에서만 적용
 		response.setContentType("text/html;charset=euc-kr");
 		PrintWriter pw = response.getWriter();
+		System.out.println("서블릿");
 		//1. 요청메세지
 		//2. 비지니스메소드 호출
 		DeptDAO dao = new DeptDAO();

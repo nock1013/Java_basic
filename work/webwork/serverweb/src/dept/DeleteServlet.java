@@ -22,6 +22,7 @@ public class DeleteServlet extends HttpServlet {
 		//2. 비지니스메소드 호출
 		DeptDAO dao = new DeptDAO();
 		int result = dao.delete(deptno);
+	
 		
 		response.sendRedirect("/serverweb/dept/list.do");
 		
