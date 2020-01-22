@@ -1,7 +1,9 @@
-package exam01;
+package dl.exam01;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
+
+import dl.exam01.TV;
 
 public class TVUser {
 	public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class TVUser {
 		tv.soundUp();
 		tv.soundDown();
 		tv.powerOff();
+		
 	}
 
 }
