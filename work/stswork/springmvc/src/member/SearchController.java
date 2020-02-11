@@ -1,6 +1,5 @@
 package member;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.servlet.ModelAndView;
@@ -12,7 +11,7 @@ public class SearchController implements Controller{
 	public ModelAndView handleRequest(HttpServletRequest req,
 			HttpServletResponse res) throws Exception {
 		String search = req.getParameter("search");
-		System.out.println("°Ë»ö¾î:"+search);
+		System.out.println("ï¿½Ë»ï¿½ï¿½ï¿½:"+search);
 		
 		return new ModelAndView("/WEB-INF/test/Index.jsp");
 	}
